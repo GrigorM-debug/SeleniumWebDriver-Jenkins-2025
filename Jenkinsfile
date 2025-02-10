@@ -19,7 +19,7 @@ pipeline {
                 stage('TestProject1 Tests') {
                     steps {
                         echo 'Running TestProject1 Tests..'
-                        bat 'dotnet test TestProject2/TestProject2.csproj --logger trx;LogFileName=TestResults.trx'
+                        bat 'dotnet test TestProject1/TestProject1.csproj --logger trx;LogFileName=TestResults.trx'
                     }
                 }
                 stage('TestProject2 Tests') {
